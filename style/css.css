@@ -1,0 +1,395 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0px;
+    margin: 0px;
+}
+#all{
+    padding: 0px;
+    width:100%;
+    height: 100vh;
+    background-color:rgba(0,0,0,0);
+    position: relative;
+
+}
+#navbar{
+    width: 960px;
+    height: 85px;
+    background-color:rgba(0,0,0,0);
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px; 
+}
+ul{
+    list-style-type:none;
+    padding: 0px;
+}
+li{
+    float: left;
+    margin-right: 209px;
+    font-size: 20px;
+    font-family:王漢宗粗鋼體一標準;
+    color: white;
+}
+#end{
+    margin-right:0px;
+}
+#main{
+    width:1170px;
+    height:calc(100vh - 85px);
+    background-color:rgba(0,0,0,0);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:393px;
+    padding-top:20px;
+}
+#fish{
+    width: 690px;
+    height:647px;
+    background-image: url(/style/img/fish1.gif);
+    background-size: cover;
+    opacity:0.3;
+}
+#fish:hover{
+    background-image: url(/style/img/fish2.png);
+    opacity:0.4;
+}
+#logo{
+    width: 180px;
+    height: 180px;
+    background-image: url(/style/img/c.gif);
+    background-size: cover;
+    position: absolute;
+    left:85px;
+    bottom: 0px;
+
+}
+h1{
+    position: absolute;
+    left:900px;
+    bottom:0px;
+    color: white;
+    font-family:王漢宗標楷體一空心;
+}
+h2{
+    position: absolute;
+    left:155px;
+    bottom: 180px;
+    color: white;
+    font-family:王漢宗標楷體一空心;
+
+}
+#page02{
+    width: 1170px;
+    height: 745px;
+    background-color:#EEEDEC;
+    margin-left: auto;
+    margin-right: auto;
+}
+#page02:hover{
+    background-color:rgba(0,0,0,0); 
+    transition-duration: 3s;
+}
+
+#page02_navbar{
+    width: 100%;
+    height: 121px;
+    border-bottom: 4px solid #4082B5;
+    color:#4082B5;
+    font-size: 31px;
+    text-align: center;
+    line-height: 121px;
+    font-family:王漢宗粗鋼體一標準;
+}
+#page02:hover > #page02_navbar{
+    border-bottom: 4px solid white;
+    color:white;
+    transition-duration: 3s; 
+}
+#page02_main{
+    width:1110px;
+    height:calc(100% - 241px);
+    margin: 30px;
+ 
+}
+.page02_main_box01{
+    width:540px;
+    height: 218px;
+    background-color: black;
+    background-image: url(/style/img/people.jpg);
+    background-size: cover;
+    background-position: center;
+    float: left;
+    margin-right: 30PX;
+}
+.page02_main_box02{
+    width: 540px;
+    height: 218px;
+    background-color:white;
+    float: left;
+    margin-bottom:30px;
+}
+#changetitle02,#changetext02{
+    display: none;
+}
+.page02_main_box02:hover > #changetitle02,.page02_main_box02:hover > #changetext02{
+    display: block;
+}
+.page02_main_box02:hover > #changetitle01,.page02_main_box02:hover > #changetext01{
+    display: none;
+}
+
+.page02_main_box03{
+    width: 255px;
+    height: 286px;
+    background-color: yellow;
+    background-image: url(/style/img/flyfish.jpg);
+    background-size: cover;
+    float: left;
+    margin-right: 30PX;
+}
+
+.page02_main_box04{
+    width: 255px;
+    height: 286px;
+    background-color: white;
+    float: left;
+    margin-right: 30PX;
+}
+#changetitle04,.changetext04{
+    display: none;
+}
+.page02_main_box04:hover > #changetitle04,.page02_main_box04:hover > .changetext04{
+    display: block;
+}
+.page02_main_box04:hover > #changetitle03,.page02_main_box04:hover > .changetext03{
+    display: none;
+}
+.page02_main_box05{
+    width: 540px;
+    height: 286px;
+    background-color: white;
+    float: left;
+}
+#changetitle06,.changetext06{
+    display: none;
+}
+.page02_main_box05:hover > #changetitle06,.page02_main_box05:hover > .changetext06{
+    display: block;
+}
+.page02_main_box05:hover > #changetitle05,.page02_main_box05:hover > .changetext05{
+    display: none;
+}
+h3{
+    padding: 0px;
+    margin: 0px;
+    margin: 30px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #4082B5;
+    font-family:微軟正黑體;
+}
+p{
+    padding: 0px;
+    margin: 0px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 15px;
+    color: #4082B5;
+    font-family:微軟正黑體;
+
+}
+#page03{
+    width: 1170px;
+    height: 940px;
+    background-color:white;
+    margin-left: auto;
+    margin-right: auto;
+}
+#page03:hover{
+    background-color:rgba(0,0,0,0);
+    transition-duration: 3s;
+ }
+#page03_navbar{
+    width: 100%;
+    height: 121px;
+    border-bottom: 4px solid #4082B5;
+    color:#4082B5;
+    font-size: 31px;
+    text-align: center;
+    line-height: 121px;
+    font-family:王漢宗粗鋼體一標準;
+}
+#page03:hover > #page03_navbar{
+    border-bottom: 4px solid white;
+    color:white;
+    transition-duration: 3s; 
+}
+#page03_main{
+    width:1110px;
+    height:calc(100% - 241px);
+    margin: 30px;
+ 
+}
+.page03_main_box{
+    width: 350px;
+    height:350px;
+    background-color:yellow;
+    float: left;
+    margin-right:30px;
+}
+#boxUR,#boxDR{
+    margin: 0px;
+    margin-bottom: 30px;
+}
+#page04{
+    width: 1170px;
+    height: 1020px;
+    background-color:#EEEDEC;
+    margin-left: auto;
+    margin-right: auto
+}
+#page04:hover{
+    background-color:rgba(0,0,0,0); 
+    transition-duration: 3s;
+}
+#page04_navbar{
+    width: 100%;
+    height: 121px;
+    border-bottom: 4px solid #4082B5;
+    color:#4082B5;
+    font-size: 31px;
+    text-align: center;
+    line-height: 121px;
+    font-family:王漢宗粗鋼體一標準;
+}
+#page04:hover > #page04_navbar{
+    border-bottom: 4px solid white;
+    color:white; 
+    transition-duration: 3s;
+}
+#page04_main{
+    width:1110px;
+    height:calc(100% - 241px);
+    margin: 30px;    
+}
+.page04_main_box{
+    width: 350px;
+    height: 250px;
+    background-color: black;
+    float: left;
+    margin-right:30px;
+}
+#box04R{
+    margin: 0px;
+    margin-bottom: 30px;
+    background-image: url(/style/img/restaurant03.jpg);
+    background-size: cover;
+}
+.longbox{
+    width: 730px;
+    height: 250px;
+    background-color: #4082B5;
+    float: left;
+    margin-right:30px;
+}
+#box04CR{
+    margin: 0px;
+    margin-bottom: 30px;
+    background-image: url(/style/img/restaurant05.png);
+    background-size: cover;
+
+}
+#longboxR{
+    margin: 0px;
+    margin-bottom: 30px;
+    background-image: url(/style/img/restaurant07.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+.restaurant01{
+    background-image: url(/style/img/restaurant01.jpg);
+    background-size: cover;
+}
+.restaurant02{
+    background-image: url(/style/img/restaurant02.jpg);
+    background-size: cover;
+}
+.restaurant04{
+    background-image: url(/style/img/restaurant04.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.restaurant06{
+    background-image: url(/style/img/restaurant06.jpg);
+    background-size: cover;
+}
+#page05{
+    width: 1170px;
+    height:1000px;
+    background-color:rgba(0,0,0,0);
+    margin-left: auto;
+    margin-right: auto
+}
+#page05_navbar{
+    width: 100%;
+    height: 121px;
+    color:white;
+    font-size: 31px;
+    text-align: center;
+    line-height: 121px;
+    font-family:王漢宗粗鋼體一標準;
+}
+#page05_main{
+    width:100%;
+    height:calc(100% -241px);
+}
+#map{
+    width: 100%;
+    height: 659px;;
+    background-color:rgba(0,0,0,0);
+    background-image: url(/style/img/map.png);
+    background-position: center;
+}
+.traffic{
+    width: 50%;
+    height: 236px;
+    background-color: white;
+    float: left;
+}
+#changecolor{
+    color: red;
+}
+#foolter{
+    width: 1170px;
+    height: 78.5px;
+    background-color: #4082B5;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fooltercolor{
+    color: white;
+    text-align: center;
+    line-height: 78.5px;
+}
+.back-to-top {
+    display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
+    position: fixed; /* 位置是固定的 */
+    bottom: 20px; /* 顯示在頁面底部 */
+    right: 30px; /* 顯示在頁面的右邊 */
+    z-index: 99; /* 確保不被其他功能覆蓋 */
+    border: 1px solid #0adaff; /* 顯示邊框 */
+    outline: none; /* 不顯示外框 */
+    background-color: #fff; /* 設置背景背景顏色 */
+    color: #0aaaf5; /* 設置文本顏色 */
+    cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
+    padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
+    border-radius: 10px; /* 增加圓角 */
+    }
+    .back-to-top:hover {
+    background-color: #050b5c; /* 滑鼠移上去時，反轉顏色 */
+    color: #fff;
+    }
+    
