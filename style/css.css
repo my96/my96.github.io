@@ -344,14 +344,32 @@ p{
 }
 #page05_main{
     width:100%;
-    height:calc(100% -241px);
+    height:calc(100% -241px);   
+}
+#page05_main_box{
+    max-width: 1170px;
+    height: auto;
+    
 }
 #map{
-    width: 100%;
+    max-width:1170px;
     height: 659px;;
     background-color:rgba(0,0,0,0);
     background-image: url(/style/img/map.png);
     background-position: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+#traffic_box{
+    width: 100%;
+    height: 236px;
+    background-color: white;
+}
+#traffic_box01{
+   width: 1170px;
+    height: 236px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .traffic{
     width: 50%;
@@ -363,7 +381,7 @@ p{
     color: red;
 }
 #foolter{
-    width: 1170px;
+    width: 100%;
     height: 78.5px;
     background-color: #4082B5;
     margin-left: auto;
@@ -380,16 +398,18 @@ p{
     bottom: 20px; /* 顯示在頁面底部 */
     right: 30px; /* 顯示在頁面的右邊 */
     z-index: 99; /* 確保不被其他功能覆蓋 */
-    border: 1px solid #0adaff; /* 顯示邊框 */
+    border:  rgba(0,0,0,0); /* 顯示邊框 */
     outline: none; /* 不顯示外框 */
-    background-color: #fff; /* 設置背景背景顏色 */
+    background-color: rgba(0,0,0,0); /* 設置背景背景顏色 */
     color: #0aaaf5; /* 設置文本顏色 */
     cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
-    padding: 10px 15px 15px 15px; /* 增加一些內邊距 */
-    border-radius: 10px; /* 增加圓角 */
+    padding: 160px 60px 60px 60px; /* 增加一些內邊距 */
+    border-radius: 15px; /* 增加圓角 */
+    background-image: url('/style/img/fish02.gif');
+    background-size: cover;
     }
     .back-to-top:hover {
-    background-color: #050b5c; /* 滑鼠移上去時，反轉顏色 */
+    background-color: rgba(0,0,0,0); /* 滑鼠移上去時，反轉顏色 */
     color: #fff;
     }
     
