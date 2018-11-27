@@ -19,7 +19,7 @@ body{
     background-color:rgba(0,0,0,0);
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px; 
+    padding-top: 30px;
 }
 ul{
     list-style-type:none;
@@ -412,4 +412,68 @@ p{
     background-color: rgba(0,0,0,0); /* 滑鼠移上去時，反轉顏色 */
     color: #fff;
     }
-    
+    @media screen and (max-width: 969px) {
+    ul{
+        display: none;
+    }
+          }
+#btn{
+        background-color:rgba(0,0,0,0); 
+        width: 80px;
+        height: 100px;
+        float:left;
+        position: relative;
+        left:15px;
+        position: absolute;
+    }
+ @media screen and (min-width: 969px) {
+        #btn{
+            display:none;
+        }
+              }
+@media screen and (max-width: 969px) {
+    #btn{
+        display:inline-block;
+    }
+          }
+#line01,#line02,#line03{
+            width: 60px;
+            height: 10px;
+            background-color: white;
+            position: absolute;
+            left:50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+        }
+#line01{
+            position: absolute;
+            top: 25%;
+        }
+#line03{
+            position: absolute;
+            top: 75%;
+        }
+#btn:hover > #btn02{
+            display: block;
+        }
+#btn02{
+            float: none;/*有浮動會跟logo排列一起*/
+            margin: 0px;
+            padding: 0px;
+            line-height:normal;/*高度間距正常*/
+            text-align:left;/*水平間靠右*/
+            display: none;
+            position: absolute;/*不然會被覆蓋掉*/
+            top: 100px;
+        }
+.btn01{
+            margin: 0px;	
+            display: grid;/*取消水平排列*/
+            color: white;
+            z-index: 9999999;
+        }
+ @media screen and (max-width: 1173px) {
+            #forgetblue{
+                display:none;
+            }
+                  }
