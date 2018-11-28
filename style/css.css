@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    /* border: 2px solid yellow; */
 }
 body{
     padding: 0px;
@@ -19,7 +20,7 @@ body{
     background-color:rgba(0,0,0,0);
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px;
+    padding-top: 30px; 
 }
 ul{
     list-style-type:none;
@@ -65,14 +66,14 @@ li{
     bottom: 0px;
 
 }
-h1{
+.h1color{
     position: absolute;
     left:900px;
     bottom:0px;
     color: white;
     font-family:王漢宗標楷體一空心;
 }
-h2{
+.h2color{
     position: absolute;
     left:155px;
     bottom: 180px;
@@ -181,7 +182,7 @@ h2{
 .page02_main_box05:hover > #changetitle05,.page02_main_box05:hover > .changetext05{
     display: none;
 }
-h3{
+.h3color{
     padding: 0px;
     margin: 0px;
     margin: 30px;
@@ -201,12 +202,13 @@ p{
     font-family:微軟正黑體;
 
 }
+h3{
+    margin: 0px;
+
+}
 #page03{
-    width: 1170px;
-    height: 940px;
+    width:100%;
     background-color:white;
-    margin-left: auto;
-    margin-right: auto;
 }
 #page03:hover{
     background-color:rgba(0,0,0,0);
@@ -228,18 +230,185 @@ p{
     transition-duration: 3s; 
 }
 #page03_main{
-    width:1110px;
-    height:calc(100% - 241px);
-    margin: 30px;
- 
+    width: 1170px;
+    height: auto;
+    background-color: brown;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid red;
 }
-.page03_main_box{
-    width: 350px;
+#box1{
+    background-color: yellow;
     height:350px;
-    background-color:yellow;
     float: left;
-    margin-right:30px;
 }
+#box1_01{
+    width: calc(100% - 15px);
+    height:calc(100% - 45px);
+    background-color: aqua;
+    margin-top: 30px;
+    margin-left: 15px;
+
+}
+#box2{
+    background-color: red;
+    height: 350px;
+    float: left;
+    
+}
+#box2_01{
+    width:100%;
+    height:calc(100% - 45px);
+    background-color: aqua;
+    margin-top: 30px;
+
+    
+}
+#box3{
+    background-color: white;
+    height: 350px;
+    float: left;
+}
+#box3_01{
+    width:calc(100% - 15px);
+    height:calc(100% - 45px);
+    background-color: aqua;
+    margin-top: 30px;
+
+    
+}
+#box4{
+    background-color: pink;
+    height:380px;
+    float: left;
+}
+#box4_01{
+    width:calc(100% - 15px) ;
+    height:calc(100% - 75px);
+    background-color: aqua;
+    margin-top: 15px;
+    margin-left: 15px;
+
+    
+}
+#box5{
+    background-color: green;
+    height:380px;
+    float: left;
+}
+#box5_01{
+    width:100%;
+    height:calc(100% - 75px);
+    background-color: aqua;
+    margin-top: 15px; 
+  
+}
+#box6{
+    background-color: black;
+    height: 380px;
+    float: left;
+}
+#box6_01{
+    width:calc(100% - 15px) ;
+    height:calc(100% - 75px);
+    background-color: aqua;
+    margin-top: 15px;           
+}
+@media screen and (max-width:1200px) {
+    #page03_main{
+    width:745px;
+    }
+    #box2_01{
+    width:calc(100% - 15px);
+        }
+    #box3_01{
+    height:calc(100% - 30px);
+    margin-top: 15px;
+    margin-left: 15px;
+    
+}
+#box4{
+    height: 350px;
+}
+#box4_01{
+    width:calc(100% - 15px) ;
+    height:calc(100% - 30px);
+    margin:0px;
+    margin-top: 15px;
+}
+#box5_01{
+    width:calc(100% - 15px) ;
+    margin: 0px;
+    margin-top: 15px; 
+    margin-left: 15px;         
+}
+#box6_01{
+    width:calc(100% - 15px) ;
+    background-color: aqua;
+    margin-top: 15px;           
+}
+
+    
+}
+@media screen and (max-width: 766px) {
+    #page03_main{
+    width:600px;
+}
+    #box1_01{
+    width: calc(100% - 30px);
+    
+}
+#box2_01{
+    width: calc(100% - 30px);
+    height:calc(100% - 30px);
+    margin-top: 15px;
+    margin-left: 15px;
+    
+}
+#box3_01{
+    width:calc(100% - 30px);
+    height:calc(100% - 30px);
+    margin-top: 15px;
+    margin-left: 15px;
+    
+}
+#box4_01{
+    width:calc(100% - 30px) ;
+    height:calc(100% - 30px);
+    background-color: aqua;           
+    margin: 0px;
+    margin-top: 15px;
+    margin-left: 15px;
+
+    
+}
+#box5{
+    height: 350px;
+}
+#box5_01{
+    width:calc(100% - 30px);
+    height:calc(100% - 30px);
+    background-color: aqua;
+    margin-top: 15px; 
+    margin-left: 15px;          
+}
+#box6_01{
+    width:calc(100% - 30px) ;
+    background-color: aqua;
+    margin-top: 15px;
+    margin-left: 15px;           
+}
+
+
+}
+@media screen and (max-width: 576px) {
+    #page03_main{
+    width:350px;
+}
+
+}
+
+
 #boxUR,#boxDR{
     margin: 0px;
     margin-bottom: 30px;
@@ -328,7 +497,7 @@ p{
 }
 #page05{
     width: 100%;
-    height:1000px;
+    height:1046px;
     background-color:rgba(0,0,0,0);
     margin-left: auto;
     margin-right: auto
@@ -359,11 +528,13 @@ p{
     background-position: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 30px;
 }
 #traffic_box{
     width: 100%;
     height: 236px;
     background-color: white;
+    margin-bottom: 30px;
 }
 #traffic_box01{
    width: 1170px;
@@ -388,6 +559,8 @@ p{
     margin-right: auto;
 }
 #fooltercolor{
+    padding: 0px;
+    margin: 0px;
     color: white;
     text-align: center;
     line-height: 78.5px;
@@ -412,68 +585,4 @@ p{
     background-color: rgba(0,0,0,0); /* 滑鼠移上去時，反轉顏色 */
     color: #fff;
     }
-    @media screen and (max-width: 969px) {
-    ul{
-        display: none;
-    }
-          }
-#btn{
-        background-color:rgba(0,0,0,0); 
-        width: 80px;
-        height: 100px;
-        float:left;
-        position: relative;
-        left:15px;
-        position: absolute;
-    }
- @media screen and (min-width: 969px) {
-        #btn{
-            display:none;
-        }
-              }
-@media screen and (max-width: 969px) {
-    #btn{
-        display:inline-block;
-    }
-          }
-#line01,#line02,#line03{
-            width: 60px;
-            height: 10px;
-            background-color: white;
-            position: absolute;
-            left:50%;
-            top: 50%;
-            transform: translate(-50%, -50%);
-        }
-#line01{
-            position: absolute;
-            top: 25%;
-        }
-#line03{
-            position: absolute;
-            top: 75%;
-        }
-#btn:hover > #btn02{
-            display: block;
-        }
-#btn02{
-            float: none;/*有浮動會跟logo排列一起*/
-            margin: 0px;
-            padding: 0px;
-            line-height:normal;/*高度間距正常*/
-            text-align:left;/*水平間靠右*/
-            display: none;
-            position: absolute;/*不然會被覆蓋掉*/
-            top: 100px;
-        }
-.btn01{
-            margin: 0px;	
-            display: grid;/*取消水平排列*/
-            color: white;
-            z-index: 9999999;
-        }
- @media screen and (max-width: 1173px) {
-            #forgetblue{
-                display:none;
-            }
-                  }
+    
