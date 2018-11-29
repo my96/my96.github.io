@@ -6,7 +6,7 @@ body{
     padding: 0px;
     margin: 0px;
 }
-#all{
+#page01{
     padding: 0px;
     width:100%;
     height: 100vh;
@@ -14,27 +14,50 @@ body{
     position: relative;
 
 }
-#navbar{
-    width: 960px;
-    height: 85px;
-    background-color:rgba(0,0,0,0);
+#mainup{
+    background-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    height: 120px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 30px; 
+    
+    
 }
-ul{
-    list-style-type:none;
-    padding: 0px;
+#navbgc{
+    width: 960px;
+    height:100%;
+    background-color:rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    
+    
+
 }
-li{
-    float: left;
-    margin-right: 209px;
+.ac{
+    margin-right:180px;
     font-size: 20px;
     font-family:王漢宗粗鋼體一標準;
-    color: white;
+    
 }
-#end{
-    margin-right:0px;
+.en{
+    margin: 0px;
+}
+#tc{
+    color: white;
+
+}
+.navbar-collapse{
+    position: absolute;
+}
+@media screen and (max-width:955px) {
+    .navbar-collapse{ 
+        top: 80px;
+    }
+    .navbar-toggler-icon{
+        background-image: url('/style/img/phone-btn.png')!important;
+        background-size: cover;
+    }
 }
 #main{
     width:1170px;
@@ -46,16 +69,21 @@ li{
     padding-top:20px;
 }
 #fish{
-    width: 690px;
-    height:647px;
-    background-image: url(/style/img/fish1.gif);
-    background-size: cover;
-    opacity:0.3;
+    width: 80%;
+    height:auto;
+    /* background-image: url(/style/img/fish1.gif);
+    background-size: cover; */
+    opacity:0.2;
 }
-#fish:hover{
+@media screen and (max-width:750px) {
+    #fish{ 
+    display: none;
+    }
+}
+/* #fish:hover{
     background-image: url(/style/img/fish2.png);
     opacity:0.4;
-}
+} */
 #logo{
     width: 180px;
     height: 180px;
@@ -66,12 +94,28 @@ li{
     bottom: 0px;
 
 }
+@media screen and (max-width:750px) {
+    #logo{
+        width: 200px; 
+        background-image: url(/style/img/fish.png);
+        background-size: cover;
+        position: absolute;
+        left:calc(50% - 100px);
+        bottom:calc(50% - 90px);
+        opacity:0.2;
+    }
+}
 .h1color{
     position: absolute;
-    left:900px;
+    left:calc(50% - 70px);
     bottom:0px;
     color: white;
     font-family:王漢宗標楷體一空心;
+}
+@media screen and (max-width:1085px) {
+    .h1color{ 
+    display: none;
+    }
 }
 .h2color{
     position: absolute;
@@ -81,14 +125,20 @@ li{
     font-family:王漢宗標楷體一空心;
 
 }
+#page02_out{
+    width: 100%;
+    height: 100%;
+    background-color: #EEEDEC;
+}
 #page02{
     width: 1170px;
     height: 745px;
-    background-color:#EEEDEC;
+    background-color:rgba(0, 0, 0, 0);
     margin-left: auto;
     margin-right: auto;
 }
-#page02:hover{
+
+#page02_out:hover{
     background-color:rgba(0,0,0,0); 
     transition-duration: 3s;
 }
@@ -412,14 +462,19 @@ h3{
     margin: 0px;
     margin-bottom: 30px;
 }
+#page04_out{
+     width: 100%;
+     height: 100%;
+     background-color:#EEEDEC;
+}
 #page04{
     width: 1170px;
     height: 1020px;
-    background-color:#EEEDEC;
+    background-color:rgba(0, 0, 0, 0);
     margin-left: auto;
     margin-right: auto
 }
-#page04:hover{
+#page04_out:hover{
     background-color:rgba(0,0,0,0); 
     transition-duration: 3s;
 }
@@ -575,10 +630,11 @@ h3{
     background-color: rgba(0,0,0,0); /* 設置背景背景顏色 */
     color: #0aaaf5; /* 設置文本顏色 */
     cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
-    padding: 160px 60px 60px 60px; /* 增加一些內邊距 */
+    padding: 60px 60px 60px 60px; /* 增加一些內邊距 */
     border-radius: 15px; /* 增加圓角 */
-    background-image: url('/style/img/fish02.gif');
+    background-image: url('/style/img/fish02.png');
     background-size: cover;
+    background-position: center;
     }
     .back-to-top:hover {
     background-color: rgba(0,0,0,0); /* 滑鼠移上去時，反轉顏色 */
