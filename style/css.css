@@ -140,6 +140,7 @@ body {
     width: 100%;
     height: 100%;
     background-color: #EEEDEC;
+    overflow: hidden;/*超出範圍隱藏起來*/
 }
 /*第二頁*/
 #page02 {
