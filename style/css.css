@@ -659,7 +659,7 @@ h3 {
     width: 100%;
     height: 400px;
     display: none;
-    background-color: #BFD0FF;
+    background-color:  #EEEDEC;
 }
 
 /*第四頁電腦版短區塊*/
@@ -821,10 +821,14 @@ h3 {
     }
 
     #page01 {
+        width: 100%;
         position: relative;
     }
 
     .bg {
+      display: none;
+    }
+    .bg01 {
         background-image: url('/style/img/sea.png');
         background-size: cover;
         position: absolute;
@@ -871,7 +875,7 @@ h3 {
     }
 
     #menu02 {
-        background-color: #BFD0FF;
+        background-color: #EEEDEC;
         display: block;
     }
 
