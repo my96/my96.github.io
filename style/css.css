@@ -1,247 +1,304 @@
-*{
+* {
     box-sizing: border-box;
     /* border: 2px solid yellow; */
 }
-body{
+
+body {
     padding: 0px;
     margin: 0px;
 }
-#page01{
+/*第一頁*/
+#page01 {
     padding: 0px;
-    width:100%;
+    width: 100%;
     height: 100vh;
-    background-color:rgba(0,0,0,0);
+    background-color: rgba(0, 0, 0, 0);
     position: relative;
 
 }
-#mainup{
+/*第一頁navbar外層*/
+#mainup {
     background-color: rgba(0, 0, 0, 0);
     width: 100%;
     height: 120px;
     margin-left: auto;
     margin-right: auto;
-    
-    
+
+
 }
-#navbgc{
+/*第一頁navbar設定及更改*/
+#navbgc {
     width: 960px;
-    height:100%;
-    background-color:rgba(0, 0, 0, 0);
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0);
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    
-    
+
+
 
 }
-.ac{
-    margin-right:180px;
+/*第一頁超連結顏色改變*/
+.ac {
+    margin-right: 180px;
     font-size: 20px;
-    font-family:王漢宗粗鋼體一標準;
-    
+    font-family: 王漢宗粗鋼體一標準;
+
 }
-.en{
+/*第一頁超聯結最後一個選項margin歸零*/
+.en {
     margin: 0px;
 }
-#tc{
+/*第一頁超聯結顏色改變*/
+#tc {
     color: white;
 
 }
-.navbar-collapse{
+
+.navbar-collapse {
     position: absolute;
 }
+/*第一頁網頁寬度到955px以下改變超連結距離及圖面*/
 @media screen and (max-width:955px) {
-    .navbar-collapse{ 
+    .navbar-collapse {
         top: 80px;
     }
-    .navbar-toggler-icon{
-        background-image: url('/style/img/phone-btn.png')!important;
+
+    .navbar-toggler-icon {
+        background-image: url('/style/img/phone-btn.png') !important;
         background-size: cover;
     }
 }
-#main{
-    width:1170px;
-    height:calc(100vh - 85px);
-    background-color:rgba(0,0,0,0);
+/*第一頁內容(下方內容)*/
+#main {
+    width: 1170px;
+    height: calc(100vh - 85px);
+    background-color: rgba(0, 0, 0, 0);
     margin-left: auto;
     margin-right: auto;
-    padding-left:393px;
-    padding-top:20px;
+    padding-left: 393px;
+    padding-top: 20px;
 }
-#fish{
+/*第一頁飛魚圖(中間)*/
+#fish {
     width: 80%;
-    height:auto;
-    /* background-image: url(/style/img/fish1.gif);
-    background-size: cover; */
-    opacity:0.2;
+    height: auto;
+    opacity: 0.2;
 }
-@media screen and (max-width:750px) {
-    #fish{ 
-    display: none;
-    }
-}
-/* #fish:hover{
-    background-image: url(/style/img/fish2.png);
-    opacity:0.4;
-} */
-#logo{
+
+/*第一頁logo(左下角)*/
+#logo {
     width: 180px;
     height: 180px;
     background-image: url(/style/img/c.gif);
     background-size: cover;
     position: absolute;
-    left:85px;
+    left: 85px;
     bottom: 0px;
 
 }
+/*第一頁網頁寬度到750px以下將飛魚及logo隱藏*/
 @media screen and (max-width:750px) {
-    #logo{
-        width: 200px; 
+    #fish {
+        display: none;
+    }
+
+    #logo {
+        width: 200px;
         background-image: url(/style/img/fish.png);
         background-size: cover;
         position: absolute;
-        left:calc(50% - 100px);
-        bottom:calc(50% - 90px);
-        opacity:0.2;
+        left: calc(50% - 100px);
+        bottom: calc(50% - 90px);
+        opacity: 0.2;
     }
 }
-.h1color{
+/*第一頁遺忘的藍標題*/
+.h1color {
     position: absolute;
-    left:calc(50% - 70px);
-    bottom:0px;
+    left: calc(50% - 70px);
+    bottom: 0px;
     color: white;
-    font-family:王漢宗標楷體一空心;
+    font-family: 王漢宗標楷體一空心;
 }
+/*第一頁網頁寬度到1085px以下"遺忘的藍"隱藏*/
 @media screen and (max-width:1085px) {
-    .h1color{ 
-    display: none;
+    .h1color {
+        display: none;
     }
 }
-.h2color{
+/*第一頁蘭嶼標題*/
+.h2color {
     position: absolute;
-    left:155px;
+    left: 155px;
     bottom: 180px;
     color: white;
-    font-family:王漢宗標楷體一空心;
+    font-family: 王漢宗標楷體一空心;
 
 }
-#page02_out{
+/*第二頁外層*/
+#page02_out {
     width: 100%;
     height: 100%;
     background-color: #EEEDEC;
 }
-#page02{
-    width: 1170px;
-    height: 745px;
-    background-color:rgba(0, 0, 0, 0);
+/*第二頁*/
+#page02 {
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0);
     margin-left: auto;
     margin-right: auto;
 }
-
-#page02_out:hover{
-    background-color:rgba(0,0,0,0); 
+/*滑鼠移至第二頁外層背景變透明*/
+#page02_out:hover {
+    background-color: rgba(0, 0, 0, 0);
     transition-duration: 3s;
 }
-
-#page02_navbar{
-    width: 100%;
+/*第二頁navbar*/
+#page02_navbar {
+    width: 61%;
     height: 121px;
     border-bottom: 4px solid #4082B5;
-    color:#4082B5;
+    color: #4082B5;
     font-size: 31px;
     text-align: center;
     line-height: 121px;
-    font-family:王漢宗粗鋼體一標準;
+    font-family: 王漢宗粗鋼體一標準;
+    margin-left: auto;
+    margin-right: auto;
 }
-#page02:hover > #page02_navbar{
+/*滑鼠移至第二頁navbar內容文字線條改變顏色*/
+#page02:hover>#page02_navbar {
     border-bottom: 4px solid white;
-    color:white;
-    transition-duration: 3s; 
+    color: white;
+    transition-duration: 3s;
 }
-#page02_main{
-    width:1110px;
-    height:calc(100% - 241px);
-    margin: 30px;
- 
+/*第二頁內容(下方)*/
+#page02_main {
+    width: 1170px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
 }
-.page02_main_box01{
-    width:540px;
-    height: 218px;
-    background-color: black;
-    background-image: url(/style/img/people.jpg);
-    background-size: cover;
-    background-position: center;
+/*第二頁內容區塊1及區塊2*/
+#page02_box01,
+#page02_box02 {
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0);
     float: left;
-    margin-right: 30PX;
+
 }
-.page02_main_box02{
-    width: 540px;
-    height: 218px;
-    background-color:white;
+/*第二頁內容區塊3及區塊4區塊5*/
+#page02_box03,
+#page02_box04,
+#page02_box05 {
+    height: 330px;
+    background-color: rgba(0, 0, 0, 0);
     float: left;
-    margin-bottom:30px;
+
 }
-#changetitle02,#changetext02{
-    display: none;
+/*第二頁內容區塊1裡面圖片範圍*/
+#page02_box01_in01 {
+    width: calc(100% - 15px);
+    height: calc(100% - 45px);
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: 15px;
 }
-.page02_main_box02:hover > #changetitle02,.page02_main_box02:hover > #changetext02{
-    display: block;
+/*第二頁內容區塊2及區塊5裡面圖片範圍*/
+#page02_box02_in01,
+#page02_box05_in01 {
+    width: calc(100% - 15px);
+    height: calc(100% - 45px);
+    background-color: white;
+    padding-top: 15px;
+
+
 }
-.page02_main_box02:hover > #changetitle01,.page02_main_box02:hover > #changetext01{
+
+#page02_box01_in01,
+#page02_box02_in01 {
+    margin-top: 30px;
+}
+/*第二頁內容區塊3及區塊4裡面圖片範圍*/
+#page02_box03_in01,
+#page02_box04_in01 {
+    width: calc(100% - 15px);
+    height: calc(100% - 75px);
+    background-color: white;
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+#page02_box04_in01 {
+    margin-left: 0px;
+    width: 100%;
+    padding-top: 15px;
+
+}
+
+#page02_box05_in01 {
+    margin-top: 15px;
+    height: calc(100% - 75px);
+}
+/*第二頁內容區塊2裡面改變文字隱藏滑鼠移至會改變*/
+#changetitle02,
+#changetext02 {
     display: none;
 }
 
-.page02_main_box03{
-    width: 255px;
-    height: 286px;
-    background-color: yellow;
-    background-image: url(/style/img/flyfish.jpg);
-    background-size: cover;
-    float: left;
-    margin-right: 30PX;
+#page02_box02_in01:hover>#changetitle02,
+#page02_box02_in01:hover>#changetext02 {
+    display: block;
 }
 
-.page02_main_box04{
-    width: 255px;
-    height: 286px;
-    background-color: white;
-    float: left;
-    margin-right: 30PX;
-}
-#changetitle04,.changetext04{
+#page02_box02_in01:hover>#changetitle01,
+#page02_box02_in01:hover>#changetext01 {
     display: none;
 }
-.page02_main_box04:hover > #changetitle04,.page02_main_box04:hover > .changetext04{
+
+/*第二頁內容區塊4裡面改變文字隱藏滑鼠移至會改變*/
+#changetitle04,
+.changetext04 {
+    display: none;
+}
+
+#page02_box04_in01:hover>#changetitle04,
+#page02_box04_in01:hover>.changetext04 {
     display: block;
 }
-.page02_main_box04:hover > #changetitle03,.page02_main_box04:hover > .changetext03{
+
+#page02_box04_in01:hover>#changetitle03,
+#page02_box04_in01:hover>.changetext03 {
     display: none;
 }
-.page02_main_box05{
-    width: 540px;
-    height: 286px;
-    background-color: white;
-    float: left;
-}
-#changetitle06,.changetext06{
+/*第二頁內容區塊5裡面改變文字隱藏滑鼠移至會改變*/
+#changetitle06,
+.changetext06 {
     display: none;
 }
-.page02_main_box05:hover > #changetitle06,.page02_main_box05:hover > .changetext06{
+
+#page02_box05_in01:hover>#changetitle06,
+#page02_box05_in01:hover>.changetext06 {
     display: block;
 }
-.page02_main_box05:hover > #changetitle05,.page02_main_box05:hover > .changetext05{
+
+#page02_box05_in01:hover>#changetitle05,
+#page02_box05_in01:hover>.changetext05 {
     display: none;
 }
-.h3color{
+/*第二頁文字區塊標題及文字設定*/
+.h3color {
     padding: 0px;
     margin: 0px;
     margin: 30px;
     margin-bottom: 15px;
     font-size: 20px;
     color: #4082B5;
-    font-family:微軟正黑體;
+    font-family: 微軟正黑體;
 }
-p{
+
+p {
     padding: 0px;
     margin: 0px;
     margin-top: 15px;
@@ -249,395 +306,627 @@ p{
     margin-right: 30px;
     font-size: 15px;
     color: #4082B5;
-    font-family:微軟正黑體;
+    font-family: 微軟正黑體;
 
 }
-h3{
+
+h3 {
     margin: 0px;
 
 }
-#page03{
-    width:100%;
-    background-color:white;
-}
-#page03:hover{
-    background-color:rgba(0,0,0,0);
-    transition-duration: 3s;
- }
-#page03_navbar{
+/*第三頁*/
+#page03 {
     width: 100%;
+    background-color: white;
+}
+/*滑鼠移至第三頁背景變透明*/
+#page03:hover {
+    background-color: rgba(0, 0, 0, 0);
+    transition-duration: 3s;
+}
+/*第三頁navbar*/
+#page03_navbar {
+    width: 61%;
     height: 121px;
     border-bottom: 4px solid #4082B5;
-    color:#4082B5;
+    color: #4082B5;
     font-size: 31px;
     text-align: center;
     line-height: 121px;
-    font-family:王漢宗粗鋼體一標準;
-}
-#page03:hover > #page03_navbar{
-    border-bottom: 4px solid white;
-    color:white;
-    transition-duration: 3s; 
-}
-#page03_main{
-    width: 1170px;
-    height: auto;
-    background-color: rgba(0,0,0,0);
+    font-family: 王漢宗粗鋼體一標準;
     margin-left: auto;
     margin-right: auto;
 }
-#box1{
-    background-color: rgba(0,0,0,0);
-    height:350px;
+/*滑鼠移至第三頁navbar文字改變*/
+#page03:hover>#page03_navbar {
+    border-bottom: 4px solid white;
+    color: white;
+    transition-duration: 3s;
+}
+/*第三頁內容(下方)*/
+#page03_main {
+    width: 1170px;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0);
+    margin-left: auto;
+    margin-right: auto;
+}
+/*第三頁內容區塊1*/
+#box1 {
+    background-color: rgba(0, 0, 0, 0);
+    height: 350px;
     float: left;
 }
-#box1_01{
+/*第三頁內容區塊1圖面範圍*/
+#box1_01 {
     width: calc(100% - 15px);
-    height:calc(100% - 45px);
-    background-color: rgba(0,0,0,0);
+    height: calc(100% - 45px);
+    background-color: rgba(0, 0, 0, 0);
     margin-top: 30px;
     margin-left: 15px;
 
 }
-#box2{
-    background-color:rgba(0,0,0,0);
+/*第三頁內容區塊2*/
+#box2 {
+    background-color: rgba(0, 0, 0, 0);
     height: 350px;
     float: left;
-    
+
 }
-#box2_01{
-    width:100%;
-    height:calc(100% - 45px);
-    background-color: rgba(0,0,0,0);
+/*第三頁內容區塊2圖面範圍*/
+#box2_01 {
+    width: 100%;
+    height: calc(100% - 45px);
+    background-color: rgba(0, 0, 0, 0);
     margin-top: 30px;
 
-    
+
 }
-#box3{
-    background-color: rgba(0,0,0,0);
+/*第三頁內容區塊3*/
+#box3 {
+    background-color: rgba(0, 0, 0, 0);
     height: 350px;
     float: left;
 }
-#box3_01{
-    width:calc(100% - 15px);
-    height:calc(100% - 45px);
-    background-color: rgba(0,0,0,0);
+/*第三頁內容區塊3圖面範圍*/
+#box3_01 {
+    width: calc(100% - 15px);
+    height: calc(100% - 45px);
+    background-color: rgba(0, 0, 0, 0);
     margin-top: 30px;
 
-    
-}
-#box4{
-    background-color: rgba(0,0,0,0);
-    height:380px;
-    float: left;
-}
-#box4_01{
-    width:calc(100% - 15px) ;
-    height:calc(100% - 75px);
-    background-color: rgba(0,0,0,0);
-    margin-top: 15px;
-    margin-left: 15px;
 
-    
 }
-#box5{
-    background-color: rgba(0,0,0,0);
-    height:380px;
-    float: left;
-}
-#box5_01{
-    width:100%;
-    height:calc(100% - 75px);
-    background-color: rgba(0,0,0,0);
-    margin-top: 15px; 
-  
-}
-#box6{
-    background-color: rgba(0,0,0,0);
+/*第三頁內容區塊4*/
+#box4 {
+    background-color: rgba(0, 0, 0, 0);
     height: 380px;
     float: left;
 }
-#box6_01{
-    width:calc(100% - 15px) ;
-    height:calc(100% - 75px);
-    background-color: rgba(0,0,0,0);
-    margin-top: 15px;           
+/*第三頁內容區塊4圖面範圍*/
+#box4_01 {
+    width: calc(100% - 15px);
+    height: calc(100% - 75px);
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 15px;
+    margin-left: 15px;
+
+
 }
+/*第三頁內容區塊5*/
+#box5 {
+    background-color: rgba(0, 0, 0, 0);
+    height: 380px;
+    float: left;
+}
+/*第三頁內容區塊5圖面範圍*/
+#box5_01 {
+    width: 100%;
+    height: calc(100% - 75px);
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 15px;
+
+}
+/*第三頁內容區塊6*/
+#box6 {
+    background-color: rgba(0, 0, 0, 0);
+    height: 380px;
+    float: left;
+}
+/*第三頁內容區塊6圖面範圍*/
+#box6_01 {
+    width: calc(100% - 15px);
+    height: calc(100% - 75px);
+    background-color: rgba(0, 0, 0, 0);
+    margin-top: 15px;
+}
+/*第二頁及第三頁網頁寬度到1200px以下RWD設定*/
 @media screen and (max-width:1200px) {
-    #page03_main{
-    width:745px;
+    #page02_main {
+        width: 745px;
     }
-    #box2_01{
-    width:calc(100% - 15px);
-        }
-    #box3_01{
-    height:calc(100% - 30px);
-    margin-top: 15px;
-    margin-left: 15px;
-    
-}
-#box4{
-    height: 350px;
-}
-#box4_01{
-    width:calc(100% - 15px) ;
-    height:calc(100% - 30px);
-    margin:0px;
-    margin-top: 15px;
-}
-#box5_01{
-    width:calc(100% - 15px) ;
-    margin: 0px;
-    margin-top: 15px; 
-    margin-left: 15px;         
-}
-#box6_01{
-    width:calc(100% - 15px) ;
-    background-color: aqua;
-    margin-top: 15px;           
-}
 
-    
+    #page02_box01 {
+        height: 315px;
+
+    }
+
+    #page02_box01_in01 {
+        width: calc(100% - 30px);
+
+    }
+
+    #page02_box02_in01 {
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    #page02_box03,
+    #page02_box04 {
+        height: 300px;
+    }
+
+    #page02_box05 {
+        height: 345px;
+
+    }
+
+    #page02_box03_in01 {
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+    }
+
+    #page02_box04_in01 {
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+        margin-left: 15px;
+    }
+
+    #page02_box05_in01 {
+        width: calc(100% - 30px);
+        margin-left: 15px;
+
+    }
+
+    #page03_main {
+        width: 745px;
+    }
+
+    #box2_01 {
+        width: calc(100% - 15px);
+    }
+
+    #box3_01 {
+        height: calc(100% - 30px);
+        margin-top: 15px;
+        margin-left: 15px;
+
+    }
+
+    #box4 {
+        height: 350px;
+    }
+
+    #box4_01 {
+        width: calc(100% - 15px);
+        height: calc(100% - 30px);
+        margin: 0px;
+        margin-top: 15px;
+    }
+
+    #box5_01 {
+        width: calc(100% - 15px);
+        margin: 0px;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    #box6_01 {
+        width: calc(100% - 15px);
+        background-color: aqua;
+        margin-top: 15px;
+    }
+
+
 }
+/*第二頁及第三頁網頁寬度到766px以下RWD設定*/
 @media screen and (max-width: 766px) {
-    #page03_main{
-    width:600px;
-}
-    #box1_01{
-    width: calc(100% - 30px);
-    
-}
-#box2_01{
-    width: calc(100% - 30px);
-    height:calc(100% - 30px);
-    margin-top: 15px;
-    margin-left: 15px;
-    
-}
-#box3_01{
-    width:calc(100% - 30px);
-    height:calc(100% - 30px);
-    margin-top: 15px;
-    margin-left: 15px;
-    
-}
-#box4_01{
-    width:calc(100% - 30px) ;
-    height:calc(100% - 30px);
-    background-color: aqua;           
-    margin: 0px;
-    margin-top: 15px;
-    margin-left: 15px;
+    #page02_main {
+        width: 600px;
+    }
 
-    
-}
-#box5{
-    height: 350px;
-}
-#box5_01{
-    width:calc(100% - 30px);
-    height:calc(100% - 30px);
-    background-color: aqua;
-    margin-top: 15px; 
-    margin-left: 15px;          
-}
-#box6_01{
-    width:calc(100% - 30px) ;
-    background-color: aqua;
-    margin-top: 15px;
-    margin-left: 15px;           
-}
+    #page03_main {
+        width: 600px;
+    }
+
+    #box1_01 {
+        width: calc(100% - 30px);
+
+    }
+
+    #box2_01 {
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+        margin-top: 15px;
+        margin-left: 15px;
+
+    }
+
+    #box3_01 {
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+        margin-top: 15px;
+        margin-left: 15px;
+
+    }
+
+    #box4_01 {
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+        background-color: aqua;
+        margin: 0px;
+        margin-top: 15px;
+        margin-left: 15px;
 
 
-}
-@media screen and (max-width: 576px) {
-    #page03_main{
-    width:350px;
-}
+    }
+
+    #box5 {
+        height: 350px;
+    }
+
+    #box5_01 {
+        width: calc(100% - 30px);
+        height: calc(100% - 30px);
+        background-color: aqua;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
+    #box6_01 {
+        width: calc(100% - 30px);
+        background-color: aqua;
+        margin-top: 15px;
+        margin-left: 15px;
+    }
+
 
 }
 
-
-#boxUR,#boxDR{
-    margin: 0px;
-    margin-bottom: 30px;
+/*第四頁外層*/
+#page04_out {
+    width: 100%;
+    height: 100%;
+    background-color: #EEEDEC;
 }
-#page04_out{
-     width: 100%;
-     height: 100%;
-     background-color:#EEEDEC;
-}
-#page04{
+/*第四頁*/
+#page04 {
     width: 1170px;
     height: 1020px;
-    background-color:rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
     margin-left: auto;
     margin-right: auto
 }
-#page04_out:hover{
-    background-color:rgba(0,0,0,0); 
-    transition-duration: 3s;
-}
-#page04_navbar{
+
+/*第四頁navbar*/
+#page04_navbar {
     width: 100%;
     height: 121px;
     border-bottom: 4px solid #4082B5;
-    color:#4082B5;
+    color: #4082B5;
     font-size: 31px;
     text-align: center;
     line-height: 121px;
-    font-family:王漢宗粗鋼體一標準;
+    font-family: 王漢宗粗鋼體一標準;
 }
-#page04:hover > #page04_navbar{
-    border-bottom: 4px solid white;
-    color:white; 
+/*滑鼠移至第四頁navbar背景變透明改變文字顏色*/
+#page04_out:hover {
+    background-color: rgba(0, 0, 0, 0);
     transition-duration: 3s;
 }
-#page04_main{
-    width:1110px;
-    height:calc(100% - 241px);
-    margin: 30px;    
+
+#page04:hover>#page04_navbar {
+    border-bottom: 4px solid white;
+    color: white;
+    transition-duration: 3s;
 }
-.page04_main_box{
+/*第四頁內容*/
+#page04_main {
+    width: 1110px;
+    height: calc(100% - 241px);
+    margin: 30px;
+}
+/*第四頁手機版(隱藏)*/
+#menu02 {
+    width: 100%;
+    height: auto;
+    display: none;
+
+}
+/*第四頁手機版圖片(隱藏)*/
+.food_box01,
+.food_box02 {
+    width: 50%;
+    height: 250px;
+    float: left;
+    display: none;
+    margin-bottom: 30px;
+}
+/*第四頁手機版文字(隱藏)*/
+.food_text01 {
+    width: 100%;
+    height: 400px;
+    display: none;
+    background-color: #BFD0FF;
+}
+
+/*第四頁電腦版短區塊*/
+.page04_main_box {
     width: 350px;
     height: 250px;
     background-color: black;
     float: left;
-    margin-right:30px;
+    margin-right: 30px;
 }
-#box04R{
+#box04R {
     margin: 0px;
     margin-bottom: 30px;
-    background-image: url(/style/img/restaurant03.jpg);
-    background-size: cover;
 }
-.longbox{
+/*第四頁電腦版長區塊*/
+.longbox {
     width: 730px;
     height: 250px;
     background-color: #4082B5;
     float: left;
-    margin-right:30px;
+    margin-right: 30px;
 }
-#box04CR{
-    margin: 0px;
-    margin-bottom: 30px;
-    background-image: url(/style/img/restaurant05.png);
-    background-size: cover;
 
-}
-#longboxR{
+#box04CR {
     margin: 0px;
     margin-bottom: 30px;
-    background-image: url(/style/img/restaurant07.jpg);
-    background-size: cover;
+}
+
+#longboxR {
+    margin: 0px;
+    margin-bottom: 30px;
     background-position: bottom;
 }
-.restaurant01{
-    background-image: url(/style/img/restaurant01.jpg);
-    background-size: cover;
-}
-.restaurant02{
-    background-image: url(/style/img/restaurant02.jpg);
-    background-size: cover;
-}
-.restaurant04{
-    background-image: url(/style/img/restaurant04.jpg);
-    background-size: cover;
-    background-position: center;
-}
-.restaurant06{
-    background-image: url(/style/img/restaurant06.jpg);
-    background-size: cover;
-}
-#page05{
+/*第五頁*/
+#page05 {
     width: 100%;
-    height:1046px;
-    background-color:rgba(0,0,0,0);
+    height: 1046px;
+    background-color: rgba(0, 0, 0, 0);
     margin-left: auto;
     margin-right: auto
 }
-#page05_navbar{
+/*第五頁navbar*/
+#page05_navbar {
     width: 100%;
     height: 121px;
-    color:white;
+    color: white;
     font-size: 31px;
     text-align: center;
     line-height: 121px;
-    font-family:王漢宗粗鋼體一標準;
+    font-family: 王漢宗粗鋼體一標準;
 }
-#page05_main{
-    width:100%;
-    height:calc(100% -241px);   
+/*第五頁內容*/
+#page05_main {
+    width: 100%;
+    height: calc(100% -241px);
 }
-#page05_main_box{
-    max-width: 1170px;
-    height: auto;
-    
-}
-#map{
-    max-width:1170px;
-    height: 659px;;
-    background-color:rgba(0,0,0,0);
+/*第五頁內容裡面地圖*/
+#map {
+    width: 1170px;
+    height: 659PX;
+    background-color: rgba(0, 0, 0, 0);
     background-image: url(/style/img/map.png);
     background-position: center;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 30px;
 }
-#traffic_box{
+/*第五頁內容下方文字說明區塊外層*/
+#traffic_box {
     width: 100%;
     height: 236px;
     background-color: white;
     margin-bottom: 30px;
 }
-#traffic_box01{
-   width: 1170px;
+/*第五頁內容下方文字說明區塊*/
+#traffic_box01 {
+    width: 1170px;
     height: 236px;
     margin-left: auto;
     margin-right: auto;
 }
-.traffic{
+/*第五頁內容下方文字說明區塊內兩小區塊*/
+.traffic {
     width: 50%;
     height: 236px;
     background-color: white;
     float: left;
 }
-#changecolor{
+
+#changecolor {
     color: red;
 }
-#foolter{
+/*頁尾*/
+#foolter {
     width: 100%;
     height: 78.5px;
     background-color: #4082B5;
     margin-left: auto;
     margin-right: auto;
 }
-#fooltercolor{
+
+#fooltercolor {
     padding: 0px;
     margin: 0px;
     color: white;
     text-align: center;
     line-height: 78.5px;
 }
+/*回到首頁按鈕*/
 .back-to-top {
-    display: none; /* 默認是隱藏的，這樣在第一屏才不顯示 */
-    position: fixed; /* 位置是固定的 */
-    bottom: 20px; /* 顯示在頁面底部 */
-    right: 30px; /* 顯示在頁面的右邊 */
-    z-index: 99; /* 確保不被其他功能覆蓋 */
-    border:  rgba(0,0,0,0); /* 顯示邊框 */
-    outline: none; /* 不顯示外框 */
-    background-color: rgba(0,0,0,0); /* 設置背景背景顏色 */
-    color: #0aaaf5; /* 設置文本顏色 */
-    cursor: pointer; /* 滑鼠移到按鈕上顯示手型 */
-    padding: 60px 60px 60px 60px; /* 增加一些內邊距 */
-    border-radius: 15px; /* 增加圓角 */
+    display: none;
+    /* 默認是隱藏的，這樣在第一屏才不顯示 */
+    position: fixed;
+    /* 位置是固定的 */
+    bottom: 20px;
+    /* 顯示在頁面底部 */
+    right: 30px;
+    /* 顯示在頁面的右邊 */
+    z-index: 99;
+    /* 確保不被其他功能覆蓋 */
+    border: rgba(0, 0, 0, 0);
+    /* 顯示邊框 */
+    outline: none;
+    /* 不顯示外框 */
+    background-color: rgba(0, 0, 0, 0);
+    /* 設置背景背景顏色 */
+    color: #0aaaf5;
+    /* 設置文本顏色 */
+    cursor: pointer;
+    /* 滑鼠移到按鈕上顯示手型 */
+    padding: 30px 30px 30px 30px;
+    /* 增加一些內邊距 */
+    border-radius: 15px;
+    /* 增加圓角 */
     background-image: url('/style/img/fish02.png');
     background-size: cover;
     background-position: center;
-    }
-    .back-to-top:hover {
-    background-color: rgba(0,0,0,0); /* 滑鼠移上去時，反轉顏色 */
+}
+
+.back-to-top:hover {
+    background-color: rgba(0, 0, 0, 0);
+    /* 滑鼠移上去時，反轉顏色 */
     color: #fff;
+}
+/*所有頁面網頁寬度到576px以下而改變*/
+@media screen and (max-width: 576px) {
+
+    #myvideo,
+    #main,
+    #page04_main {
+        display: none;
+
     }
-    
+
+    #page02_main,
+    #page05_main {
+        width: 100%;
+
+    }
+
+    #page01 {
+        position: relative;
+    }
+
+    .bg {
+        background-image: url('/style/img/sea.png');
+        background-size: cover;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+    }
+
+    #page03_main {
+        width: 350px;
+
+    }
+
+    #page04 {
+        width: 100%;
+        height: auto;
+    }
+
+    #page05 {
+        height: 821px;
+    }
+
+    #page05_navbar {
+        color: #4082B5;
+        border-bottom: 4px solid #4082B5;
+        width: 61%;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    #map {
+        display: none;
+    }
+
+    #traffic_box01 {
+        width: 100%;
+    }
+
+    .traffic {
+        width: 100%;
+        height: 350px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #menu02 {
+        background-color: #BFD0FF;
+        display: block;
+    }
+
+    .box {
+        width: 100%;
+        height: auto;
+        display: none;
+        padding-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .box_show {
+        display: block;
+    }
+
+    .btn_01 {
+        background-color: #242E6D;
+        color: #FFDA8F;
+        width: 100%;
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+
+    h3 {
+
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    p {
+        font-size: 15px;
+        padding: 10px;
+        text-align: center;
+    }
+
+    hr {
+        background-color: #242E6D;
+        height: 2px;
+    }
+
+    #chw {
+        width: 100%;
+        text-align: center;
+    }
+
+    .food_box01,
+    .food_box02,
+    .food_text01 {
+        display: block;
+    }
+    .back-to-top{
+       left: 30px;
+       padding: 15px 15px 15px 15px;  
+    }
+
+
+}
