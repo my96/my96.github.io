@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    /* border: 2px solid yellow; */
 }
 
 body {
@@ -823,6 +822,9 @@ h3 {
     #page01 {
         width: 100%;
         position: relative;
+    }
+    #navbgc{
+        width: 100%;
     }
 
     .bg {
